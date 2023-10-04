@@ -1,0 +1,169 @@
+:root {
+  --grey: #eee;
+  --light: #f9f9f9;
+  --red: #db504a;
+}
+
+body {
+  background-color: var(--grey) !important;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+header .bx {
+  font-size: 40px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification {
+  font-size: 20px;
+  position: relative;
+}
+
+.notification .bx {
+  font-size: 20px;
+}
+
+.notification .num {
+  position: absolute;
+  top: 0px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  color: var(--light);
+  font-weight: 700;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--light);
+  background: var(--red);
+}
+
+.navbar-toggler {
+  border: none !important;
+  background-color: #fff !important;
+  outline: none;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 20px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  transition: 0.4s;
+  margin-left: 0px;
+  background-color: #fff;
+}
+
+.sidebar li a .bx {
+  min-width: calc(50px - ((4px + 6px) * 2));
+}
+
+#main-content {
+  padding-top: 90px;
+  margin-left: 230px;
+  transition: 0.4s;
+}
+
+@media (max-width: 830px) {
+  .sidebar {
+    display: none;
+  }
+
+  #main-content {
+    margin: 0px;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 992px) {
+  .account {
+    display: none;
+  }
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next svg, .swiper-button-prev svg {
+    width: 20px!important;
+    height: 20px!important;
+}
+
+/* card */
+.default-shadow {
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 6px 0px !important;
+}
+
+.rounded-2 {
+  border-radius: 10px !important;
+}
+
+.bg-image-card {
+  height: 100px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-box-item {
+  height: 150px !important;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden !important;
+}
+
+.card-box-item .category,
+.date,
+.group {
+  font-size: 12px;
+}
+
+.padding-5-15 {
+  padding: 5px 15px;
+}
+
+.text-overflow-ellips {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+}
