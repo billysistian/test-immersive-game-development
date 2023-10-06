@@ -99,14 +99,18 @@ a {
   }
 }
 
-swiper-container {
+/* swiper */
+.swiper-custom {
+  position: relative;
+}
+.swiper {
   width: 100%;
   height: 100%;
 }
 
-swiper-slide {
-  width: 100px;
-  height: 100px;
+.swiper-slide {
+  width: 100px !important;
+  height: 100px !important;
   background: #fff;
   border-radius: 50%;
   display: flex;
@@ -114,16 +118,38 @@ swiper-slide {
   align-items: center;
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.swiper-button-next svg, .swiper-button-prev svg {
-    width: 20px!important;
-    height: 20px!important;
+.swiper-button-prev,
+.swiper-button-next {
+  top: unset !important;
+  bottom: -40px;
+  position: absolute;
+  height: 30px !important;
+  width: 30px !important;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #db504a;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  left: auto !important;
+  right: 50px !important;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 /* card */
