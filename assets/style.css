@@ -78,6 +78,8 @@ a {
 
 #main-content {
   padding-top: 90px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-left: 230px;
   transition: 0.4s;
 }
@@ -88,6 +90,8 @@ a {
   }
 
   #main-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin: 0px;
     transition: 0.4s;
   }

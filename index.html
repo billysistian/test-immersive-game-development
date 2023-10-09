@@ -181,7 +181,7 @@
       </li>
     </div>
 
-    <div class="px-4" style="padding-top: 90px" id="main-content">
+    <div id="main-content">
       <a href="#">
         <img
           width="300"
@@ -230,8 +230,10 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="navigation-swiper">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
 
       <div class="row mb-5 mt-5">
@@ -490,18 +492,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper", {
+        centeredSlides: false,
         breakpoints: {
-          320: {
+          360: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 12,
           },
-          640: {
-            slidesPerView: 5,
-            spaceBetween: 20,
+          428: {
+            slidesPerView: 3,
+            spaceBetween: 15,
           },
           768: {
             slidesPerView: 6,
-            spaceBetween: 30,
+            spaceBetween: 24,
           },
           1024: {
             slidesPerView: 7,
